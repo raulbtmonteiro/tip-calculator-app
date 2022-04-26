@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <title>Frontend Mentor | Tip calculator app</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png">
+  </head>
+  <body>
+    <h1 id="title">Spli<br>tter</h1>
+
+    <div id="container">
+      <div id="info">
+
+        <div>
+          <label for="bill" class="info-label">Bill</label>
+          <input type="number" class="info-input input-bill" name="bill" placeholder="0">
+        </div>
+        
+        <div id="tip">
+          <label class="info-label">Select Tip %</label>
+          <div class="tip-buttons">
+            <button class="tip-item">5%</button>
+            <button class="tip-item">10%</button>
+            <button class="tip-item">15%</button>
+            <button class="tip-item">25%</button>
+            <button class="tip-item">50%</button>
+            <input class="tip-custom" placeholder="Custom"></input>
+          </div>
+        </div>
+        
+        <div>
+          <div id="flex">
+            <label for="people" class="info-label">Number of people</label>
+            <p id="validation">Can't be zero</p>
+          </div>          
+          <input type="number" class="info-input input-people" name="people" placeholder="0">
+        </div>
+        
+      </div>
+      <div id="results">
+        <div class="secundario-grid">
+          <div>
+            <p class="results-title">Tip Amount</p>
+            <p class="results-description">/ person</p>
+          </div>
+          <p id="tip-amount" class="results-person">$0.00</p>          
+        </div>
+              
+        <div class="secundario-grid">
+          <div>
+            <p class="results-title">Total</p>
+            <p class="results-description">/ person</p> 
+          </div>
+          <p id="total" class="results-person">$0.00</p> 
+        </div>
+          
+        <button id="reset">reset</button>
+        </div>  
+      </div>      
+    </div>
+
+    
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/raulbtmonteiro" target="_blank">Raul Monteiro</a>.
+    </div>
+
+    <script src="select-tip.js"></script>
+    <script src="calculo.js"></script>
+  </body>
+</html>

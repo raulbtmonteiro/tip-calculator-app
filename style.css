@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(185, 41%, 84%);
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    height: 100%;
+    overflow: auto;
+}
+
+#title {
+    color: hsl(183, 100%, 15%);
+    text-align: center;
+    text-transform: uppercase;
+    margin: 2% 0 2%;;
+    letter-spacing: 0.2em;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: white;
+    max-width: 980px;
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.info-label {
+    display: inline-block;
+    color: hsl(184, 14%, 56%);
+    margin: 20px 0 10px 0;
+}
+
+.info-input {
+    display: block;
+    box-sizing: border-box;
+    border: 0px;
+    background-color: hsl(189, 41%, 97%);
+    width: 85%;
+    height: 50px;
+    border-radius: 5px;
+    text-align: right;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 24px; 
+    color: hsl(183, 100%, 15%);
+}
+
+.info-input::-webkit-inner-spin-button,
+.info-input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.info-input:focus{
+    border-color: hsl(172, 67%, 45%);
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 24px; 
+    color: hsl(183, 100%, 15%);
+}
+
+.info-input::placeholder {
+    color: hsl(185, 41%, 84%);
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.input-bill{
+    background-image: url(images/icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-position-x: 10px;
+    background-position-y: center;
+}
+
+.input-people{
+    background-image: url(images/icon-person.svg);
+    background-repeat: no-repeat;
+    background-position-x: 10px;
+    background-position-y: center;
+}
+
+#flex {
+    width: 85%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+#validation {
+    display: inline-block;
+    color: red;
+    margin: 20px 0 10px 0;
+}
+
+#tip{
+    width: 85%;
+}
+
+.tip-buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+
+.tip-item{
+    height: 50px;
+    border: 0px;
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    border-radius: 10px;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.tip-custom{
+    height: 50px;
+    border: none;
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(186, 14%, 43%);
+    border-radius: 10px;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 24px;
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+}
+
+.tip-custom::placeholder{
+    color: hsl(184, 14%, 56%);
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+}
+
+#results {
+    padding: 40px;
+    background-color: hsl(183, 100%, 15%);
+    display: grid;
+    grid-template-rows: 1fr 1fr 2fr;
+    border-radius: 20px;
+}
+
+#reset {
+    height: 50px;
+    align-self: flex-end;
+    border-radius: 10px;
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    border: none;
+    text-transform: uppercase;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.results-title {
+    color: white;
+}
+
+.results-description {
+    color: hsl(184, 14%, 56%);
+}
+
+.secundario-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.results-person {
+    color: hsl(172, 67%, 45%);
+    font-size: 35px;
+}
+
+.attribution {
+    color: hsl(184, 14%, 56%);
+    text-align: center;
+    margin-top: 50px;
+}
+
+.attribution a{
+    text-decoration: none;
+    color: hsl(183, 100%, 15%);
+}
+
+.buttom-selected{
+    height: 50px;
+    border: none;
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    border-radius: 10px;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+@media screen and (max-width: 480px) {
+    #title {
+        margin: 5% 0;
+    }
+
+    #container {
+        display: grid;
+        width: 90vw;
+        grid-template-columns: 100%;
+        grid-template-rows: 65% 35%;
+        padding: 15px;
+    }
+    
+    .info-input {
+        width: 100%;
+    }
+
+    #flex {
+        width: 100%;
+    }
+    
+    #tip{
+        width: 100%;
+    }
+    
+    .tip-buttons{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    #info {
+        height:fit-content;
+    }
+
+    .results-person {
+        font-size: 28px;
+    }
+
+
+}
