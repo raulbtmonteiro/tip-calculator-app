@@ -189,6 +189,7 @@ body {
     color: hsl(184, 14%, 56%);
     text-align: center;
     margin-top: 50px;
+    margin-bottom: 20px;
 }
 
 .attribution a{
